@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
 import {
     Plus, CheckCircle, Clock, LogOut, Send,
-    TrendingUp, Activity, BarChart3, Edit2, Trash2,
-    MoreVertical, Calendar, ClipboardList
+    TrendingUp, Activity, Edit2, Trash2,
+    Calendar, ClipboardList
 } from 'lucide-react';
 
 interface Laporan {
@@ -259,8 +259,8 @@ export const Dashboard: React.FC = () => {
                                             <td className="px-8 py-6">
                                                 <span
                                                     className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-extrabold uppercase tracking-tight ${item.status === 'Selesai'
-                                                            ? 'bg-emerald-50 text-emerald-600 border border-emerald-100'
-                                                            : 'bg-amber-50 text-amber-600 border border-amber-100'
+                                                        ? 'bg-emerald-50 text-emerald-600 border border-emerald-100'
+                                                        : 'bg-amber-50 text-amber-600 border border-amber-100'
                                                         }`}
                                                 >
                                                     <span className={`w-1.5 h-1.5 rounded-full ${item.status === 'Selesai' ? 'bg-emerald-500' : 'bg-amber-500'}`}></span>
